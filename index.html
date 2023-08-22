@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)http://cater.haidilao.com/biz/terminus/toQueueInfoPageNew.html?id=85377cd155e14eaeae45fc90ee8857aa020180 -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- 所需的meta标签-->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./assets/info.css" />
+
+    <title>排号详情</title>
+    <script>
+      var queuedId = 104442;
+    </script>
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+  </head>
+  <body>
+    <input type="hidden" name="queuedId" id="queuedId" value="104442" />
+
+    <ul id="showInfo" style="">
+      <li id="li1">
+        <img src="./assets/log.png" />
+        <p><span>排号信息</span></p>
+      </li>
+      <li>
+        <span class="mar"
+          >门店：<span id="storeName" class="bold"
+            >海底捞(朝阳北路店)</span
+          ></span
+        >
+      </li>
+      <li>
+        <span class="mar"
+          >号码：<span id="queueNum" class="bold">283号</span></span
+        >
+      </li>
+
+      <li id="cor">
+        <span class="mar"
+          >就餐人数：<span id="ParticipantNumber" class="bold">2人</span></span
+        >
+      </li>
+      <li>
+        <span class="mar"
+          >桌型：<span id="tableType" class="bold">小桌</span></span
+        >
+      </li>
+      <li>
+        <span class="mar"
+          >市别：<span id="timeType" class="bold">晚市</span></span
+        >
+      </li>
+
+      <li><span class="mar" id="wait">当前叫号：小桌189号</span></li>
+      <li id="bot"><span class="mar">队列更新</span></li>
+      <li id="butn" style="display: none">
+        <a
+          id="dinging"
+          data-pid="104442"
+          data-sid="020112"
+          data-oid="XBJ122017103014721"
+          >点餐</a
+        >
+      </li>
+    </ul>
+    <div id="footer" style="display: none">关&nbsp;闭</div>
+
+    <script src="./assets/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./assets/publicMethods.js"></script>
+    <script type="text/javascript" src="./assets/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="./assets/rowInfoNew.js"></script>
+  </body>
+</html>
