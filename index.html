@@ -27,7 +27,7 @@
     <ul id="showInfo" style="">
       <li id="li1">
         <img src="./assets/log.png" />
-        <p><span>排号信息</span></p>
+        <p><span id="paihaoxinxi">排号信息</span></p>
       </li>
       <li>
         <span class="mar"
@@ -71,10 +71,28 @@
       </li>
     </ul>
     <div id="footer" style="display: none">关&nbsp;闭</div>
+    <div id="myformwrap" style="display: none">
+      <form id="myForm">
+        <label for="name">店名:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+
+        <label for="email">号码:</label>
+        <input type="text" id="email" name="email" required />
+        <br />
+
+        <label for="age">当前叫号:</label>
+        <input type="text" id="age" name="age" required />
+        <br />
+
+        <input type="submit" value="提交" />
+      </form>
+    </div>
 
     <script src="./assets/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="./assets/publicMethods.js"></script>
     <script type="text/javascript" src="./assets/jweixin-1.0.0.js"></script>
     <script type="text/javascript" src="./assets/rowInfoNew.js"></script>
+    <script type="text/javascript" src="./assets/main.js"></script>
   </body>
 </html>
