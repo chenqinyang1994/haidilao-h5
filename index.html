@@ -14,6 +14,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="./assets/info.css" />
+    <link rel="stylesheet" href="./assets/main.css" />
 
     <title>排号详情</title>
     <script>
@@ -71,21 +72,44 @@
       </li>
     </ul>
     <div id="footer" style="display: none">关&nbsp;闭</div>
-    <div id="myformwrap" style="display: none">
+    <div id="myformwrap">
+      <div id="formClose">X</div>
       <form id="myForm">
-        <label for="name">店名:</label>
-        <input type="text" id="name" name="name" required />
-        <br />
-
-        <label for="email">号码:</label>
-        <input type="text" id="email" name="email" required />
-        <br />
-
-        <label for="age">当前叫号:</label>
-        <input type="text" id="age" name="age" required />
-        <br />
-
-        <input type="submit" value="提交" />
+        <div class="mylabel">
+          <label for="name">门店:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="mylabel">
+          <label for="number">号码:</label>
+          <input type="number" id="number" name="number" required />
+        </div>
+        <div class="mylabel">
+          <label for="renshu">就餐人数:</label>
+          <input type="number" id="renshu" name="renshu" value="2" required />
+        </div>
+        <div class="mylabel">
+          <label for="zhuoxing">桌型:</label>
+          <select id="zhuoxing" name="zhuoxing">
+            <option value="小桌" selected>小桌</option>
+            <option value="中桌">中桌</option>
+            <option value="大桌">大桌</option>
+          </select>
+        </div>
+        <div class="mylabel">
+          <label for="shibie">市别:</label>
+          <select id="shibie" name="shibie">
+            <option value="午市" selected>午市</option>
+            <option value="晚市">晚市</option>
+            <option value="夜市">夜市</option>
+          </select>
+        </div>
+        <div class="mylabel">
+          <label for="curNumber">当前叫号:</label>
+          <input type="number" id="curNumber" name="curNumber" required />
+        </div>
+        <div class="submit">
+          <input type="submit" value="提交" />
+        </div>
       </form>
     </div>
 

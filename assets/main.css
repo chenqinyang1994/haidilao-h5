@@ -1,0 +1,61 @@
+#myformwrap {
+  position: relative;
+  display: none;
+  width: 260px;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 30px 20px;
+  background: #00000070;
+  z-index: 9999;
+}
+
+#myformwrap #formClose {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #eee;
+  background-color: #ffffff80;
+}
+
+#myformwrap input {
+  width: 160px;
+  border: 1px solid #eee;
+}
+
+#myformwrap select {
+  width: 160px;
+  border: 1px solid #eee;
+}
+
+#myformwrap label {
+  color: #fff;
+}
+
+.mylabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.submit {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit input {
+  width: 100px;
+  height: 30px;
+}
